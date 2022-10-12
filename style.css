@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* global changes */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none                          ;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18%;
+    border: 1px solid rgba(219, 219, 219, 1);
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+/* logo */
+header .logo{
+    height: 29px;
+}
+header .logo img{
+    height: 100%;
+    object-fit: contain;
+    padding-top: 10px;
+    /* size: 70px 20px; */
+}
+
+.main header .logo img{
+    font-size: 30px;
+}
+
+/* search box */
+
+header .search-box{
+    width: 250px;
+    background-color: rgba(239, 239, 239, 1);
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    margin-right: 5px;
+    
+}
+
+header .search-box input{
+    height: 29px;
+    outline: none;
+    border: none;
+    background-color: rgba(239, 239, 239, 1);
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+/* nav icons */
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin-right: 20px;
+}
+header nav ul li:last-child{
+    margin-right: 0;
+}
+header nav ul li a img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+header nav ul li a i{
+    font-size: 22px;
+    color: default;
+}
+
+/* Section */
+.left-side{
+    width: 65%;
+}
+section{
+    padding: 30px 18%;
+    background-color: #fafafa;
+    display: flex;
+}
+
+
+/* story */
+
+.story{
+    display: flex;
+    padding: 16px;
+    margin-right: 3px;
+    background-color: white;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 3px;
+}
+
+.story .userStories{
+    width: 17%;
+    overflow: hidden;
+
+}
+
+.story .userStories a img{
+    border-radius: 50%;
+    border:2px solid #fd1d1d;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.story .userStories p{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 1px;
+}
+
+/* post tite */
+
+.posts{
+    margin: 25px 0;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(219, 219, 219, 1);
+}
+
+.posts .postTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.posts .postTitle .postTitleLeft{
+    display: flex;
+    align-items: center;
+}
+.posts .postTitle  .postTitleLeft .image img{
+    border-radius: 50%;
+    margin-right: 18px;
+    border:2px solid #fd1d1d;
+    padding: 1px;
+    object-fit: cover;
+}
+
+.posts .postTitle  .postTitleLeft .details .name{
+    font-weight: bold;
+    padding: 2px;
+}
+
+.posts .postTitle  .postTitleRight i{
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* conent image */
+
+.posts .postImage img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* post footer */
+
+.posts .postFooter{
+    display: flex;
+    justify-content: space-between;
+
+}
+.posts .postFooter .likecmntshr{
+    font-size: 22px;
+    margin: 0 10px;
+    padding: 16px;
+}
+.posts .postFooter .likecmntshr i{
+    margin-right: 10px;
+    font-size: 22px;
+    
+}
+.posts .postFooter .save{
+    font-size: 22px;
+    margin: 0 10px;
+    padding: 16px;
+}
+.posts .postFooter .fa-heart:hover{
+    color:red;
+}
+.posts .postFooter .fa-comment:hover{
+    color:#6C7A89;
+}
+.posts .postFooter .fa-paper-plane:hover{
+    color:#6C7A89;
+}
+.posts .postFooter .fa-bookmark:hover{
+    color:#6C7A89;
+}
+
+
+
+/* posts footer content */
+.posts .postFooterContent{
+    padding: 0px 16px 16px 25px;
+}
+.posts .postFooterContent .name{
+    font-weight: bold;
+}
+.posts .postFooterContent .name span{
+    font-weight: normal;
+    margin-left: 10px;
+    text-overflow: ellipsis;
+}
+.posts .postFooterContent  .comments{
+    font-size: 15px;
+    margin-top: 3px;
+}
+.posts .postFooterContent .comments span{
+    font-weight: bold;
+}
+.posts .postFooterContent  .postingTime{
+    font-size: 10px;
+    margin-top: 8px;
+}
+/* comment section */
+
+.posts .addComment{
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.posts .addComment .right span:hover{
+    color: #336EFF;
+    font-weight: bold;
+}
+.posts .addComment .left{
+    display: flex;
+    align-items: center;
+}
+.posts .addComment .left i{
+    font-size: 22px;
+    margin-right: 15px;
+}
+.posts .addComment .left input{
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.addComment .right span{
+    color: #80b3ff;
+}
+
+/* right of the page  */
+
+.right-side{
+    width: 35%;
+    margin-top: 19px;
+    position: fixed;
+    right: 30px;
+}
+
+.right-side .title{
+    display: flex;
+    align-items: center;
+}
+.right-side .title .left{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.right-side .title .left .image img{
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+}
+.right-side .title .left .details .name{
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+.right-side .title .left .details .userName{
+    font-weight: normal;
+    font-size: 16px;
+    color:#BFBFBF;
+}
+.right-side .right p{
+    margin-left: 10px;
+    padding-left: 35px;
+    font-size: 16px;
+    color: #68a3fa;
+}
+.right-side .title .right p{
+    padding-right: 30px;
+    margin-left: 59px;
+}
+.right-side .suggestionTab .seall{
+    padding-left: 16px;
+    margin-right: 30px;
+}
+
+/* suggestion tab */
+
+.suggestionTab{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.suggestionTab p{
+    margin-right: 90px;
+}
+.suggestionTab .sgfu{
+    color:#6C7A89;
+}
+/* suggest tab */
+.suggest{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.suggest .suggestLeft{
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+}
+
+.suggest .suggestLeft .image img{
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.suggest .suggestLeft .details .name{
+    font-weight: bold;
+}
+.suggest .suggestLeft .details .followers{
+    font-size: small;
+}
+.suggest .suggestRight .follow .follow-btn{
+    color: #68a3fa;
+    margin-right: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.suggest .suggestRight .follow .follow-btn:nth-last-child(){
+    padding-left: 10px;
+    margin-right: 20px;
+}
+
+/* heart transform */
+
+.postImage i{
+    position: absolute;
+    top: 100vh;
+    left:38%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    color:red;
+    animation: heartGrow 0.8s linear;
+    -webkit-animation: heartGrow 0.8s linear;
+}
+
+@keyframes heartGrow{
+    100%{
+        transform: scale(12);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
